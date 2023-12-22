@@ -1,0 +1,292 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Nov 27, 2023, 10:05:20 PM
+    Author     : idens
+*/
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    margin: 0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+}
+
+.part{
+    display: flex;
+    flex-direction: row;
+    /*    justify-content: space-between;*/
+    /*    align-items: center;*/
+    margin: 5px 0;
+}
+
+.part label {
+    flex: 1;
+    text-align: left;
+    margin-right: 10px;
+    text-align: start;
+}
+
+.part input {
+    flex: 1;
+    padding-left:5px;
+
+}
+.part select {
+    flex: 1;
+}
+
+.inputAlbumDescription{
+    width: 380.33px;
+    height: 300px;
+    text-align: start;
+    resize: none;
+    padding-left:5px;
+}
+
+.inputDescription{
+    width: 380.33px;
+    height: 300px;
+    text-align: start;
+    resize: none;
+    padding-left:5px;
+}
+.error{
+    color: red;
+    flex: 1;
+    text-align: center;
+}
+
+
+.addAlbumButton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.submitButton {
+    background-color: #337ab7;
+    color: white;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.submitButton:hover {
+    background-color: #99ccff;
+}
+
+
+
+.section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 100px;
+    margin-top: 0px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.sectionOne {
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.sectionTwo {
+    display: grid;
+    /*    grid-template-rows: repeat(4, 1fr);*/
+    gap: 10px;
+}
+
+/*.image img{
+   
+    width: 500px;
+    height: 500px;
+}*/
+.myImageContainer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 100px;
+    margin-top: 0px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.partID{
+    display: flex;
+    flex-direction: row;
+    /*    justify-content: space-between;*/
+    align-items: center;
+    margin: 5px 0;
+}
+
+.partID label {
+    flex: 1;
+    text-align: left;
+    margin-right: 10px;
+    text-align: start;
+}
+
+.partID input {
+    flex: 1;
+    padding-left:5px;
+
+}
+
+.pictureTitle {
+    align-items: center;
+    margin: 10px 0 10px 0;
+    text-align: center;
+}
+.partDescrib{
+    display: flex;
+    flex-direction: row;
+    /*    justify-content: space-between;*/
+    /*    align-items: center;*/
+    margin: 3px 0;
+    margin: 1px 0;
+}
+
+.addComment{
+    width: 350.33px;
+    height: 250px;
+    text-align: start;
+    resize: none;
+    padding-left:5px;
+}
+.hideButton{
+    display: none;
+    margin-bottom: 10px;
+}
+
+.tagFriend {
+    padding-left: 200px;
+}
+
+.defriend{
+    margin-bottom: 50px;
+}
+
+.requestButton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.pic {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+}
+
+
+
+.modal-content {
+    margin: auto;
+        display: block;
+    width: 200px;
+    height: 200px;
+        align-items: center;
+}
+
+.bigImage{
+    align-items: center;
+
+}
+
+.largePic{
+    width: 400px;
+    height: 400px;
+    margin: 5px;
+
+}
+
+/*.imageContainer {
+    max-width: 600px;
+    max-height: 80px;
+    overflow-X: auto;
+    overflow-y: auto;
+}*/
+
+        
+        .imageWithComments {
+    display: flex;
+    /* Adjust flex properties based on your layout requirements */
+}
+
+
+.descriptionAndComments {
+    /* Set width and float to position description and comments side by side */
+    width: 50%;
+    float: left;
+}
+
+.addCommentSection {
+    /* Clear floats and position below the description and comments */
+    clear: both;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+
+/* Structure for image and comments layout */
+
+/* Main container for image and comments */
+.imageWithComments {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: flex-start; /* Align items at the top */
+    margin-top: 20px; /* Add margin as needed */
+}
+
+/* Container holding both images and comments */
+.imageAndCommentsContainer {
+    display: flex;
+    gap: 20px; /* Add gap between image and comments */
+    /* Add any other styles or dimensions as needed */
+}
+
+/* Container for images */
+.imageContainer {
+    /* Styles for the image container */
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap when container width is limited */
+    gap: 10px; /* Add gap between images */
+}
+
+/* Individual image style */
+.imageContainer img {
+    max-width: 150px; /* Set the maximum width of each thumbnail */
+    height: auto; /* Allow height to adjust proportionally */
+    cursor: pointer; /* Show pointer cursor on images */
+    /* Add other styles as needed */
+}
+
+/* Container for comments */
+.commentsSection {
+    /* Styles for comments section */
+    /* Add any specific styles or dimensions */
+}
+
+
+.author{
+    color: blue;
+}
+
+.info{color: blue;}
+
+.selectedThumbnail {
+    border: 4px solid blue;
+}
